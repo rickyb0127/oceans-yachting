@@ -182,3 +182,39 @@ nav.dark-theme {
   padding-left: 300px;
   padding-right: 300px;
 }
+
+@media screen and (max-width: 767px){
+  nav.dark-theme {
+    height: 100px;
+  }
+  .home-logo {
+    margin-top: -20px;
+  }
+  .navbar-toggle {
+    margin-top: 30px;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+    background-color: black;
+  }
+  .navbar-nav {
+    line-height: 0;
+  }
+  .navbar-collapse {
+    box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1297px){
+  .home-logo {
+    margin-top: -20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+  }
+  .navbar-nav {
+    line-height: 0;
+    margin-top: 50px;
+  }
+}
