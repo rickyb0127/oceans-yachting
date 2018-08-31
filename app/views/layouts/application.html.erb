@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OceansYachting</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="icon" type="image/png" href="/assets/OCE-logo.png">
+</head>
+<body>
+
+  <nav class="navbar navbar-default dark-theme">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><%= image_tag "OCE-logo.png", class: "home-logo"%></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#people">People</a></li>
+          <li><a href="#fuel">Fuel</a></li>
+          <li><a href="#engineering_spares_supplies">Engineering Spares and Supplies</li>
+          <li><a href="#insurance">Insurance</a></li>
+          <li><a href="#dockage_marinas">Dockage and Marinas</a></li>
+          <li><a href="#agency">Agency</li>
+          <li><a href="#flag_certification">Flag Certification</a></li>
+          <li><a href="#classification">Classification</a></li>
+          <li><a href="#imo_ism">IMO ISM</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <%= image_tag "boat-calm-horizon.jpg", class: "bg-1"%>
+
+  <div class="section-1 slug-link">
+    <a name="people">
+      <h1 class="text-center section-header">People</h1>
+      <div class="row mx-auto text-center section-content-container">
+        <div class="col-md-4">
+          <div class="card center-block">
+            <%= image_tag "david-price.jpg", class: "card-img-top"%>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text container-fluid">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card center-block">
+            <%= image_tag "mookie-betts.jpg", class: "card-img-top"%>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text container-fluid">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card center-block">
+            <%= image_tag "jd-martinez.jpg", class: "card-img-top"%>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="container-fluid card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-2 slug-link">
+    <a name="fuel">
+      <h1 class="text-center section-header">Fuel</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "fuel.jpg", class:"section-img"%>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-container">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-3 slug-link">
+    <a name="engineering_spares_supplies">
+      <h1 class="text-center section-header">Engineering Spares and Supplies</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="text-container">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "engineering.png", class:"section-img"%>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-4 slug-link">
+    <a name="insurance">
+      <h1 class="text-center section-header">Insurance</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "insurance.jpg", class:"section-img"%>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-container">
+            Mauris quis porttitor sapien. Nullam imperdiet efficitur dui, nec facilisis enim suscipit et. In pulvinar turpis ac sem pellentesque, et sollicitudin nulla finibus. Maecenas nec arcu sit amet nulla molestie gravida eu a felis. Phasellus quis consectetur nisi, at porta ipsum. Morbi mi dolor, luctus vitae cursus nec, ultricies quis nisl. Aliquam posuere est felis, vel facilisis orci elementum quis. Vivamus urna magna, ultricies ac sagittis id, finibus sed elit. Sed a ullamcorper turpis. Cras rhoncus eu mauris quis dignissim. Nam condimentum sem sed tellus pellentesque, et interdum nisi viverra. Maecenas mollis porta felis. Nunc iaculis nisl quam, id pretium mauris consectetur eget. Sed condimentum magna lacus, vitae luctus metus convallis eu
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-5 slug-link">
+    <a name="dockage_marinas">
+      <h1 class="text-center section-header">Dockage and Marinas</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "marina.jpeg", class:"section-img"%>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-container">
+            Duis ac ornare dolor, sit amet tincidunt lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi molestie erat sapien, a interdum felis pharetra at. Cras dignissim lorem in lorem molestie, a dictum enim auctor. Pellentesque congue dolor sed iaculis facilisis. Cras condimentum sodales risus a ullamcorper. Quisque vitae neque eget purus rhoncus posuere. Donec id rutrum magna. Suspendisse potenti. Donec et neque porta nulla posuere fringilla. Proin vel ullamcorper nisi. Aliquam at auctor libero. Praesent viverra porttitor tortor, nec finibus magna. In dapibus dapibus interdum. Aliquam turpis nisl, condimentum eu ornare vel, pellentesque eu ligula. Donec ante massa, vulputate ullamcorper pretium eget, imperdiet maximus tortor
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-6 slug-link">
+    <a name="agency">
+      <h1 class="text-center section-header">Agency</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="text-container">
+            Nam ultrices sed nibh varius eleifend. Duis volutpat dolor et nulla tempus malesuada vitae vel nisi. Quisque dictum et tellus in blandit. Vivamus sit amet tincidunt massa. Nam tempus, odio at mattis faucibus, sem ipsum rutrum nibh, a cursus ante mauris ac risus. Aliquam mollis mauris viverra pretium ullamcorper. Morbi et vulputate odio. Praesent scelerisque augue et arcu rutrum aliquam. Vestibulum at mi eu est congue ultrices. Sed quis ligula quis turpis consectetur scelerisque.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "agency.jpeg", class:"section-img"%>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-7 slug-link">
+    <a name="flag_certification">
+      <h1 class="text-center section-header">Flag Certification</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "flag.jpg", class:"section-img"%>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-container">
+            Etiam semper aliquet erat in pulvinar. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse rhoncus, orci eu rhoncus fringilla, ante odio suscipit nisi, nec convallis nunc diam vel arcu. Aliquam ac dolor et mi sagittis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam suscipit ante nibh, id bibendum tellus pharetra a. Ut nec felis eget turpis tristique feugiat.
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-8 slug-link">
+    <a name="classification">
+      <h1 class="text-center section-header">Classification</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "classification.jpg", class:"section-img"%>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text-container">
+            Nam rhoncus felis est, varius iaculis quam blandit quis. Ut laoreet vel ante eu iaculis. Donec risus nisi, iaculis a sapien eu, hendrerit auctor nisi. Donec sed eros purus. Vivamus posuere quis orci a rutrum. Vivamus aliquam ac nisl id auctor. Morbi vestibulum in orci ut vestibulum
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-9 slug-link">
+    <a name="imo_ism">
+      <h1 class="text-center section-header">IMO ISM</h1>
+      <div class="row section-content-container">
+        <div class="col-md-6">
+          <div class="text-container">
+            Nam pretium nulla a sapien tempus lobortis. Sed ultricies eros ut tincidunt imperdiet. Donec et eleifend sem, ac gravida neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec felis tortor, ullamcorper non eleifend non, molestie in turpis. Vivamus faucibus tincidunt risus sit amet malesuada. Pellentesque a consequat leo, accumsan elementum orci. Nulla facilisi. Suspendisse ut faucibus est. Suspendisse suscipit nec ipsum eu tincidunt.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-container">
+            <%= image_tag "imo-iso.jpeg", class:"section-img"%>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+<%= yield %>
+
+<div class="footer dark-theme">
+  <div class="social-links text-center">
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+  <div class="text-center container-fluid">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+
+</body>
+</html>
