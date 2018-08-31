@@ -105,14 +105,20 @@ nav.dark-theme {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .card {
-  background-color: grey;
+  background-color: rgb(234, 237, 242);
   width: 70%;
   padding-top: 30px;
   padding-bottom: 50px;
   border-radius: 2%;
+  box-shadow: 3px 6px 6px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  border-top: solid black 1px;
 }
 
 .section-img {
