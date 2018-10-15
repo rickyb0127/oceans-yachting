@@ -11,96 +11,132 @@
 
   <nav class="navbar navbar-default dark-theme">
     <div class="container-fluid">
+      <div class="navbar-padding">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand mr-0 mr-md-2" href="/"><%= image_tag "OCE-logo.png", class: "home-logo"%></a>
-      </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand mr-0 mr-md-2" href="/"><%= image_tag "oceans-yachting-logo.png", class: "home-logo"%></a>
+        </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="#people">People</a></li>
-          <li><a href="#fuel">Fuel</a></li>
-          <li><a href="#engineering_spares_supplies">Engineering Spares and Supplies</li>
-          <li><a href="#insurance">Insurance</a></li>
-          <li><a href="#dockage_marinas">Dockage and Marinas</a></li>
-          <li><a href="#agency">Agency</li>
-          <li><a href="#flag_certification">Flag Certification</a></li>
-          <li><a href="#classification">Classification</a></li>
-          <li><a href="#imo_ism">IMO ISM</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#company_profile">Company Profile</a></li>
+            <li><a href="#yacht_management">Yacht Management</a></li>
+            <li><a href="#engineering_services">Engineering Services</li>
+            <li><a href="#helicopter_aviation">Helicopter/Aviation</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
     </div><!-- /.container-fluid -->
   </nav>
 
-  <%= image_tag "boat-calm-horizon.jpg", class: "bg-1"%>
+  <div id="carousel-bg-image" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <%= image_tag "bg-img-1.jpg", class: "main-bg bg-1"%>
+      </div>
+      <div class="item">
+        <%= image_tag "bg-img-2.jpg", class: "main-bg bg-2"%>
+      </div>
+      <div class="item">
+        <%= image_tag "bg-img-3.jpg", class: "main-bg bg-3"%>
+      </div>
+      <div class="item">
+        <%= image_tag "bg-img-4.jpg", class: "main-bg bg-4"%>
+      </div>
+      <div class="item">
+        <%= image_tag "bg-img-5.jpg", class: "main-bg bg-5"%>
+      </div>
+    </div>
+  </div>
 
   <div class="section-1 slug-link">
-    <a name="people">
-      <h1 class="text-center section-header">People</h1>
-      <div class="row mx-auto text-center section-content-container">
-        <div class="col-md-4">
-          <div class="card center-block">
-            <%= image_tag "david-price.jpg", class: "card-img-top"%>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text container-fluid">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a name="company_profile">
+      <h1 class="text-center section-header">Company Profile</h1>
+      <div id="carousel-profile" class="carousel slide">
+        <div class="row mx-auto text-center section-content-container">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="col-md-4">
+                <div class="card center-block">
+                  <%= image_tag "david-price.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">David Price</h5>
+                    <p class="card-text container-fluid">SP</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card center-block">
+                  <%= image_tag "mookie-betts.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Mookie Betts</h5>
+                    <p class="card-text container-fluid">OF</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card center-block">
+                  <%= image_tag "jd-martinez.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">JD Martinez</h5>
+                    <p class="container-fluid card-text">OF</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-4">
+                <div class="card center-block">
+                  <%= image_tag "jackie-bradley.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Jackie Bradley Jr</h5>
+                    <p class="container-fluid card-text">OF</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card center-block">
+                  <%= image_tag "xander-bogarts.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Xander Bogarts</h5>
+                    <p class="container-fluid card-text">CI</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card center-block">
-            <%= image_tag "mookie-betts.jpg", class: "card-img-top"%>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text container-fluid">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
+        <!-- Controls -->
+        <div class="carousel-profile-control-container">
+          <a class="left carousel-control" href="#carousel-profile" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-profile" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="card center-block">
-            <%= image_tag "jd-martinez.jpg", class: "card-img-top"%>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="container-fluid card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-md-4">
-          <div class="card center-block">
-            <%= image_tag "jackie-bradley.jpg", class: "card-img-top"%>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="container-fluid card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card center-block">
-            <%= image_tag "xander-bogarts.jpg", class: "card-img-top"%>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="container-fluid card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div> -->
       </div>
     </a>
   </div>
 
   <div class="section-2 slug-link">
-    <a name="fuel">
-      <h1 class="text-center section-header">Fuel</h1>
+    <a name="yacht_management">
+      <h1 class="text-center section-header">Yacht Management</h1>
       <div class="row section-content-container">
         <div class="col-md-6">
           <div class="image-container">
-            <%= image_tag "fuel.jpg", class:"section-img"%>
+            <%= image_tag "yacht-management.jpg", class:"section-img"%>
           </div>
         </div>
         <div class="col-md-6">
@@ -113,8 +149,8 @@
   </div>
 
   <div class="section-3 slug-link">
-    <a name="engineering_spares_supplies">
-      <h1 class="text-center section-header">Engineering Spares and Supplies</h1>
+    <a name="engineering_services">
+      <h1 class="text-center section-header">Engineering Services</h1>
       <div class="row section-content-container">
         <div class="col-md-6">
           <div class="text-container">
@@ -123,7 +159,7 @@
         </div>
         <div class="col-md-6">
           <div class="image-container">
-            <%= image_tag "engineering.png", class:"section-img"%>
+            <%= image_tag "engineering.jpg", class:"section-img"%>
           </div>
         </div>
       </div>
@@ -131,12 +167,12 @@
   </div>
 
   <div class="section-4 slug-link">
-    <a name="insurance">
-      <h1 class="text-center section-header">Insurance</h1>
+    <a name="helicopter_aviation">
+      <h1 class="text-center section-header">Helicopter/Aviation</h1>
       <div class="row section-content-container">
         <div class="col-md-6">
           <div class="image-container">
-            <%= image_tag "insurance.jpg", class:"section-img"%>
+            <%= image_tag "aviation.jpg", class:"section-img"%>
           </div>
         </div>
         <div class="col-md-6">
@@ -148,7 +184,7 @@
     </a>
   </div>
 
-  <div class="section-5 slug-link">
+  <!-- <div class="section-5 slug-link">
     <a name="dockage_marinas">
       <h1 class="text-center section-header">Dockage and Marinas</h1>
       <div class="row section-content-container">
@@ -164,9 +200,9 @@
         </div>
       </div>
     </a>
-  </div>
+  </div> -->
 
-  <div class="section-6 slug-link">
+  <!-- <div class="section-6 slug-link">
     <a name="agency">
       <h1 class="text-center section-header">Agency</h1>
       <div class="row section-content-container">
@@ -182,9 +218,9 @@
         </div>
       </div>
     </a>
-  </div>
+  </div> -->
 
-  <div class="section-7 slug-link">
+  <!-- <div class="section-7 slug-link">
     <a name="flag_certification">
       <h1 class="text-center section-header">Flag Certification</h1>
       <div class="row section-content-container">
@@ -200,9 +236,9 @@
         </div>
       </div>
     </a>
-  </div>
+  </div> -->
 
-  <div class="section-8 slug-link">
+  <!-- <div class="section-8 slug-link">
     <a name="classification">
       <h1 class="text-center section-header">Classification</h1>
       <div class="row section-content-container">
@@ -218,9 +254,9 @@
         </div>
       </div>
     </a>
-  </div>
+  </div> -->
 
-  <div class="section-9 slug-link">
+  <!-- <div class="section-9 slug-link">
     <a name="imo_ism">
       <h1 class="text-center section-header">IMO ISM</h1>
       <div class="row section-content-container">
@@ -236,19 +272,32 @@
         </div>
       </div>
     </a>
-  </div>
+  </div> -->
 
 <%= yield %>
 
 <div class="footer dark-theme">
   <div class="social-links text-center">
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-twitter-square"></i>
-    <i class="fab fa-instagram"></i>
+    <a href="https://www.facebook.com" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+    <a href="https://www.linkedin.com" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
   </div>
   <div class="text-center container-fluid">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <h4>Contact Us</h4>
+    Aaron Abramowitz
+    <br>
+    <div class="contact-footer">
+      <a href="tel:203-243-0191">
+        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 203.243.0191
+      </a>
+      <br>
+      <%= mail_to "aaron@oceansyachting.com" do %>
+        <span>aaron@oceansyachting.com</span>
+      <% end %>
+    </div>
   </div>
+</div>
+<div class="slug-link">
+  <a name="contact"></a>
 </div>
 
 </body>

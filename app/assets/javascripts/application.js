@@ -18,14 +18,16 @@
 
 jQuery(document).ready(function($) {
   $('.flip').click(function(){
-        $(this).find('.card').addClass('flipped').mouseleave(function(){
-            $(this).removeClass('flipped');
-        });
-        return true;
+      $(this).find('.card').addClass('flipped').mouseleave(function(){
+          $(this).removeClass('flipped');
+          // modal shows additional info
       });
+    return true;
+  });
 
-  $( ".card" ).hover(
-    function() {
-    }
-  );
+  $('#carousel-bg-image').carousel({
+    interval: 2000
+  })
+
+  $('#carousel-profile').carousel('pause');
 });

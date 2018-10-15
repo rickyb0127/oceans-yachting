@@ -19,11 +19,16 @@
  @import "font-awesome";
 
 .dark-theme {
-  background-color: black;
+  background-color: rgb(0, 79, 113);
 }
 
-.home-logo {
-  height: 120px;
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 85px;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
 }
 
 nav.dark-theme {
@@ -36,10 +41,8 @@ nav.dark-theme {
 }
 
 .navbar-nav {
-  margin:0 auto;
-  display: block;
   text-align: center;
-  line-height: 10;
+  float: none;
 }
 
 .navbar-nav > li {
@@ -47,45 +50,14 @@ nav.dark-theme {
   float:none;
 }
 
+.navbar-padding {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .slug-link a:hover, .slug-link a:visited, .slug-link a:link, .slug-link a:active
 {
   text-decoration: none !important;
-}
-
-.section-1.slug-link a {
-  color: black;
-}
-
-.section-2.slug-link a {
-  color: white;
-}
-
-.section-3.slug-link a {
-  color: black;
-}
-
-.section-4.slug-link a {
-  color: white;
-}
-
-.section-5.slug-link a {
-  color: black;
-}
-
-.section-6.slug-link a {
-  color: white;
-}
-
-.section-7.slug-link a {
-  color: black;
-}
-
-.section-8.slug-link a {
-  color: white;
-}
-
-.section-9.slug-link a {
-  color: black;
 }
 
 .section-header {
@@ -93,18 +65,25 @@ nav.dark-theme {
   padding-bottom: 120px;
 }
 
-.bg-1 {
+.carousel-inner > .item > img, .carousel-inner > .item > a > img .main-bg {
   background-size: contain;
   height: 100vh;
   width: 100%;
   opacity: 0.9;
 }
 
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
 .card-img-top {
   height:150px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%;
   margin-bottom: 20px;
 }
 
@@ -113,12 +92,12 @@ nav.dark-theme {
   width: 70%;
   padding-top: 30px;
   padding-bottom: 50px;
-  border-radius: 2%;
   box-shadow: 3px 6px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 
-.card-body {
-  border-top: solid black 1px;
+.card:hover {
+  opacity: 0.5;
 }
 
 .section-img {
@@ -131,50 +110,13 @@ nav.dark-theme {
   margin-right: 30px;
 }
 
-.section-1 {
-  min-height: 100vh;
-}
-
-.section-2 {
-  min-height: 100vh;
-  background-color: black;
-}
-
-.section-3 {
-  min-height: 100vh;
-}
-
-.section-4 {
-  min-height: 100vh;
-  background-color: black;
-}
-
-.section-5 {
-  min-height: 100vh;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.section-6 {
-  min-height: 100vh;
-  background-color: black;
-}
-
-.section-7 {
-  min-height: 100vh;
-}
-
-.section-8 {
-  min-height: 100vh;
-  background-color: black;
-}
-
-.section-9 {
-  min-height: 100vh;
-}
-
 .footer {
   height: 50vh;
+  color: rgb(158, 122, 96);
+}
+
+.contact-footer a {
+  text-decoration: none !important;
   color: rgb(158, 122, 96);
 }
 
@@ -193,15 +135,12 @@ nav.dark-theme {
   nav.dark-theme {
     height: 100px;
   }
-  .home-logo {
-    margin-top: -20px;
-  }
   .navbar-toggle {
     margin-top: 30px;
   }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
-    background-color: black;
+    background-color: rgb(0, 79, 113);
   }
   .navbar-nav {
     line-height: 0;
@@ -209,11 +148,20 @@ nav.dark-theme {
   .navbar-collapse {
     box-shadow: none;
   }
+  .navbar .container-fluid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .navbar .navbar-padding {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1297px){
   .home-logo {
-    margin-top: -20px;
     position: absolute;
     left: 50%;
     margin-left: -50px !important;  /* 50% of your logo width */
