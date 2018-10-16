@@ -55,14 +55,52 @@ nav.dark-theme {
   margin-right: 50px;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: rgb(255, 255, 255);
+}
+
+.background-logo {
+  position: fixed;
+  height: auto;
+  z-index: -1;
+  left: 50%;
+  margin-left: auto;
+  margin-left: -125px;
+  width: 250px;
+  top: 100px;
+  opacity: 0.3;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  margin-right: -30px;
+  color: rgb(0, 79, 113)
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-next {
+  margin-left: -30px;
+  color: rgb(0, 79, 113)
+}
+
 .slug-link a:hover, .slug-link a:visited, .slug-link a:link, .slug-link a:active
 {
   text-decoration: none !important;
 }
 
-.section-header {
+.section-header-padding-top {
   padding-top: 140px;
-  padding-bottom: 120px;
+}
+
+.section-header-padding-bottom {
+  padding-bottom: 40px;
+}
+
+.section-header-underline {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: rgb(0, 79, 113);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img .main-bg {
@@ -88,7 +126,7 @@ nav.dark-theme {
 }
 
 .card {
-  background-color: rgb(234, 237, 242);
+  background-color: rgba(0, 79, 113, 0.7);
   width: 70%;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -98,6 +136,14 @@ nav.dark-theme {
 
 .card:hover {
   opacity: 0.5;
+}
+
+.card-body {
+  color: white;
+}
+
+.modal-img {
+  height:150px;
 }
 
 .section-img {
@@ -122,13 +168,10 @@ nav.dark-theme {
 
 .social-links {
   font-size: 60px;
-  padding-top: 50px;
 }
 
 .footer-text-container {
   padding-top: 50px;
-  padding-left: 300px;
-  padding-right: 300px;
 }
 
 @media screen and (max-width: 767px){
