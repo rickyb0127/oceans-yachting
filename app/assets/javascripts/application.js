@@ -17,17 +17,16 @@
 //= require_tree .
 
 jQuery(document).ready(function($) {
-  $('.flip').click(function(){
-      $(this).find('.card').addClass('flipped').mouseleave(function(){
-          $(this).removeClass('flipped');
-          // modal shows additional info
-      });
-    return true;
-  });
-
   $('#carousel-bg-image').carousel({
-    interval: 2000
+    interval: 4000,
+    pause: "false"
   })
 
   $('#carousel-profile').carousel('pause');
+
+  var navbarHeightString = $('.navbar').css('height');
+  var navbarHeight = parseInt(navbarHeightString.match(/\d+/g).map(Number));
+  var bgImageTop = navbarHeight + 100 + 'px';
+
+  $('.background-logo').css('top', bgImageTop);
 });

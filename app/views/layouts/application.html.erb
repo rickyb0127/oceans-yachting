@@ -188,59 +188,127 @@
     <div class="section-header-underline"></div>
     <div class="section-header-padding-bottom"></div>
     <div id="carousel-profile" class="carousel slide">
-      <div class="row mx-auto text-center section-content-container">
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="card center-block" data-toggle="modal" data-target="#employee-modal-1">
-                <%= image_tag "david-price.jpg", class: "card-img-top"%>
-                <div class="card-body">
-                  <h5 class="card-title">David Price</h5>
-                  <p class="card-text container-fluid">SP</p>
+
+      <!-- regular screen rendering -->
+      <div class="regular-screen">
+        <div class="row mx-auto text-center section-content-container">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-1">
+                  <%= image_tag "david-price.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">David Price</h5>
+                    <p class="card-text container-fluid">SP</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-2">
+                  <%= image_tag "mookie-betts.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Mookie Betts</h5>
+                    <p class="card-text container-fluid">OF</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-3">
+                  <%= image_tag "jd-martinez.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">JD Martinez</h5>
+                    <p class="container-fluid card-text">OF</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="card center-block" data-toggle="modal" data-target="#employee-modal-2">
-                <%= image_tag "mookie-betts.jpg", class: "card-img-top"%>
-                <div class="card-body">
-                  <h5 class="card-title">Mookie Betts</h5>
-                  <p class="card-text container-fluid">OF</p>
+            <div class="item">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-4">
+                  <%= image_tag "jackie-bradley.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Jackie Bradley Jr</h5>
+                    <p class="container-fluid card-text">OF</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="card center-block" data-toggle="modal" data-target="#employee-modal-3">
-                <%= image_tag "jd-martinez.jpg", class: "card-img-top"%>
-                <div class="card-body">
-                  <h5 class="card-title">JD Martinez</h5>
-                  <p class="container-fluid card-text">OF</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="card center-block" data-toggle="modal" data-target="#employee-modal-4">
-                <%= image_tag "jackie-bradley.jpg", class: "card-img-top"%>
-                <div class="card-body">
-                  <h5 class="card-title">Jackie Bradley Jr</h5>
-                  <p class="container-fluid card-text">OF</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <div class="card center-block" data-toggle="modal" data-target="#employee-modal-5">
-                <%= image_tag "xander-bogarts.jpg", class: "card-img-top"%>
-                <div class="card-body">
-                  <h5 class="card-title">Xander Bogarts</h5>
-                  <p class="container-fluid card-text">CI</p>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-5">
+                  <%= image_tag "xander-bogarts.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Xander Bogarts</h5>
+                    <p class="container-fluid card-text">CI</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- mobile screen rendering -->
+      <div class="mobile-screen">
+        <div class="row mx-auto text-center section-content-container">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-1">
+                  <%= image_tag "david-price.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">David Price</h5>
+                    <p class="card-text container-fluid">SP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-2">
+                  <%= image_tag "mookie-betts.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Mookie Betts</h5>
+                    <p class="card-text container-fluid">OF</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-3">
+                  <%= image_tag "jd-martinez.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">JD Martinez</h5>
+                    <p class="container-fluid card-text">OF</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-4">
+                  <%= image_tag "jackie-bradley.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Jackie Bradley Jr</h5>
+                    <p class="container-fluid card-text">OF</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-5">
+                  <%= image_tag "xander-bogarts.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Xander Bogarts</h5>
+                    <p class="container-fluid card-text">CI</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Controls -->
       <div class="carousel-profile-control-container">
         <a class="left carousel-control" href="#carousel-profile" role="button" data-slide="prev">

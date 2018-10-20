@@ -65,9 +65,8 @@ nav.dark-theme {
   z-index: -1;
   left: 50%;
   margin-left: auto;
-  margin-left: -125px;
-  width: 250px;
-  top: 100px;
+  margin-left: -250px;
+  width: 500px;
   opacity: 0.3;
 }
 
@@ -107,7 +106,6 @@ nav.dark-theme {
   background-size: contain;
   height: 100vh;
   width: 100%;
-  opacity: 0.9;
 }
 
 .carousel-control.right {
@@ -174,6 +172,33 @@ nav.dark-theme {
   padding-top: 50px;
 }
 
+.modal {
+  text-align: center;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.mobile-screen {
+  display: none;
+}
+
 @media screen and (max-width: 767px){
   nav.dark-theme {
     height: 100px;
@@ -200,6 +225,16 @@ nav.dark-theme {
   .navbar .navbar-padding {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  .regular-screen {
+    display: none;
+  }
+  .mobile-screen {
+    display: block;
+  }
+  .background-logo {
+    margin-left: -125px;
+    width: 250px;
   }
 }
 
