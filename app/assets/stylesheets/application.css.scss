@@ -18,6 +18,11 @@
  @import "font-awesome-sprockets";
  @import "font-awesome";
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .dark-theme {
   background-color: rgb(0, 79, 113);
 }
@@ -199,52 +204,129 @@ nav.dark-theme {
   display: none;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 872px){
   nav.dark-theme {
     height: 100px;
   }
+
   .navbar-toggle {
     margin-top: 30px;
   }
+
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
     background-color: rgb(0, 79, 113);
   }
+
   .navbar-nav {
     line-height: 0;
   }
+
   .navbar-collapse {
     box-shadow: none;
   }
+
   .navbar .container-fluid {
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+
   .navbar .navbar-padding {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
+  .navbar-brand {
+    margin-left: 15px !important;
+  }
+
   .regular-screen {
     display: none;
   }
+
   .mobile-screen {
     display: block;
   }
+
+  .card {
+    max-width: 300px;
+  }
+
   .background-logo {
     margin-left: -125px;
     width: 250px;
   }
+
+  .modal-dialog {
+    text-align: center;
+  }
+
+  .left.carousel-control {
+    margin-left: 3%;
+  }
+
+  .right.carousel-control {
+    margin-right: 3%;
+  }
+
+  .section-3 .text-container {
+    padding-bottom: 40px;
+  }
+
+  .section-4 .text-container {
+    padding-bottom: 40px;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+
+  .navbar-nav>li {
+    float: none;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .collapse.in{
+    display:block !important;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1297px){
+@media screen and (min-width: 873px) and (max-width: 1297px){
   .home-logo {
     position: absolute;
     left: 50%;
     margin-left: -50px !important;  /* 50% of your logo width */
     display: block;
   }
+  
   .navbar-nav {
     line-height: 0;
     margin-top: 50px;
