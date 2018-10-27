@@ -20,15 +20,21 @@
 
 jQuery(document).ready(function($) {
   $('#carousel-bg-image').carousel({
-    interval: 4000,
+    interval: 8000,
     pause: "false"
   })
 
   $("#mobile-carousel-profile").swiperight(function() {
    $(this).carousel('prev');
   });
-
   $("#mobile-carousel-profile").swipeleft(function() {
+     $(this).carousel('next');
+  });
+
+  $("#carousel-profile").swiperight(function() {
+   $(this).carousel('prev');
+  });
+  $("#carousel-profile").swipeleft(function() {
      $(this).carousel('next');
   });
 
@@ -38,6 +44,5 @@ jQuery(document).ready(function($) {
   var navbarHeightString = $('.navbar').css('height');
   var navbarHeight = parseInt(navbarHeightString.match(/\d+/g).map(Number));
   var bgImageTop = navbarHeight + 100 + 'px';
-
   $('.background-logo').css('top', bgImageTop);
 });
