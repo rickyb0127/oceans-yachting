@@ -215,10 +215,6 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <%= image_tag "ahmed-majumder.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
-            </div>
             <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
               <div class="col-md-8 col-sm-8 col-xs-12">
                 <div class="<%= @session[:screen_size] == 'regular' ? '' : 'text-center' %>">
@@ -227,20 +223,20 @@
                 </div>
               </div>
             </div>
+            <div class="modal-body">
+              Mr. Ahmed Majumder has spent his career in Product and Technical Product Management. He has an Executive MBA from the University of Maryland, with a focus on Human Capital, International Business and Operations Management He also has a BS in Computer Engineering from Virginia Tech. His career includes diverse experience in engineering, management, and leadership in multibillion-dollar programs. His career roles have included software engineer, test engineer, configuration control specialist, systems engineer, computer engineer, project engineer & manager, program manager and product manager. As deputy program manager of a multibillion-dollar asset, Mr. Majumder has gained the experience and professionalism to support the demands of the yachting industry.
+              <br></br>
+              <!-- Quotes to be added -->
+            </div>
+            <div class="profile-bullets">
+              <ul>
+                <!-- Ships to be added -->
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
-        </div>
-        <div class="modal-body">
-          Mr. Ahmed Majumder has spent his career in Product and Technical Product Management. He has an Executive MBA from the University of Maryland, with a focus on Human Capital, International Business and Operations Management He also has a BS in Computer Engineering from Virginia Tech. His career includes diverse experience in engineering, management, and leadership in multibillion-dollar programs. His career roles have included software engineer, test engineer, configuration control specialist, systems engineer, computer engineer, project engineer & manager, program manager and product manager. As deputy program manager of a multibillion-dollar asset, Mr. Majumder has gained the experience and professionalism to support the demands of the yachting industry.
-          <br></br>
-          <!-- Quotes to be added -->
-        </div>
-        <div class="profile-bullets">
-          <ul>
-            <!-- Ships to be added -->
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -267,6 +263,15 @@
                   <div class="card-body">
                     <h5 class="card-title">Aaron Abramowitz</h5>
                     <p class="container-fluid card-text">CEO - USCG Master Oceans 1600/3000</p>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="card center-block" data-toggle="modal" data-target="#employee-modal-5">
+                    <%= image_tag "ahmed-majumder.jpg", class: "card-img-top"%>
+                    <div class="card-body">
+                      <h5 class="card-title">Ahmed Majumder</h5>
+                      <p class="container-fluid card-text">Buisness & Computer Technology Specialist</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -317,6 +322,17 @@
                   <div class="card-body">
                     <h5 class="card-title">Ahmed Majumder</h5>
                     <p class="container-fluid card-text">Buisness & Computer Technology Specialist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-xs-12">
+                  <div class="card center-block" data-toggle="modal" data-target="#mobile-employee-modal-5">
+                    <%= image_tag "ahmed-majumder.jpg", class: "card-img-top"%>
+                    <div class="card-body">
+                      <h5 class="card-title">Ahmed Majumder</h5>
+                      <p class="container-fluid card-text">Buisness & Computer Technology Specialist</p>
+                    </div>
                   </div>
                 </div>
               </div>
