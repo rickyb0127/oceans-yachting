@@ -59,19 +59,23 @@
     </div>
   </div>
 
-  <!-- Regular Screen Modal -->
+  <!-- profile modal -->
   <div class="modal fade" id="employee-modal-1" tabindex="-1" role="dialog" aria-labelledby="employee-modal-1-label">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <%= image_tag "aaron-abramowitz.jpg", class: "modal-img"%>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <%= image_tag "aaron-abramowitz.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
             </div>
-            <div class="col-md-8 col-sm-8 col-xs-8">
-              <h4 class="modal-title" id="employee-modal-1-label">Aaron Abramowitz</h4>
-              <h4>CEO - USCG Master Oceans 1600/3000</h4>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="<%= @session[:screen_size] == 'regular' ? '' : 'text-center' %>">
+                  <h4 class="modal-title" id="employee-modal-1-label">Aaron Abramowitz</h4>
+                  <h4>CEO - USCG Master Oceans 1600/3000</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -102,17 +106,21 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <%= image_tag "david-abramowitz.jpg", class: "modal-img"%>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <%= image_tag "david-abramowitz.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
             </div>
-            <div class="col-md-8 col-sm-8 col-xs-8">
-              <h4 class="modal-title" id="employee-modal-2-label">David Abramowitz</h4>
-              <h4>CFO - Head of Engineering</h4>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="<%= @session[:screen_size] == 'regular' ? '' : 'text-center' %>">
+                  <h4 class="modal-title" id="employee-modal-2-label">David Abramowitz</h4>
+                  <h4>CFO - Head of Engineering</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="modal-body">
-          Mr. David Abramowitz graduated  from Virginia Tech in 2000 with a B.S. in Mechanical Engineering. He moved through the Navy and USCG contractor ranks as an estimator, verification and validation specialist, interface specialist, project manager, program manager, chief engineer, principal engineer and program analyst. He has directed multimillion dollar programs responsible for tasking 30+ engineers. During this time, he has successfully started and funded multiple businesses in construction, private equity, real estate rental, engineering services, and software development. It’s David ability to dissect complicated tasks into simple efforts that allows him to succeed where others fail.
+          Mr. David Abramowitz graduated from Virginia Tech in 2000 with a B.S. in Mechanical Engineering. He moved through the Navy and USCG contractor ranks as an estimator, verification and validation specialist, interface specialist, project manager, program manager, chief engineer, principal engineer and program analyst. He has directed multimillion dollar programs responsible for tasking 30+ engineers. During this time, he has successfully started and funded multiple businesses in construction, private equity, real estate rental, engineering services, and software development. It’s David ability to dissect complicated tasks into simple efforts that allows him to succeed where others fail.
           <br></br>
           ‘My mentor once told me F=ma anywhere in the world. I’ve never been able to prove him wrong.'
         </div>
@@ -139,12 +147,16 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <%= image_tag "matt-redmond.jpg", class: "modal-img"%>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <%= image_tag "matt-redmond.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
             </div>
-            <div class="col-md-8 col-sm-8 col-xs-8">
-              <h4 class="modal-title" id="employee-modal-3-label">Matthew Redmond</h4>
-              <h4>Aviation COO</h4>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="<%= @session[:screen_size] == 'regular' ? '' : 'text-center' %>">
+                  <h4 class="modal-title" id="employee-modal-3-label">Matthew Redmond</h4>
+                  <h4>Aviation COO</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -174,187 +186,16 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <%= image_tag "dave-smith.jpg", class: "modal-img"%>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <%= image_tag "dave-smith.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
             </div>
-            <div class="col-md-8 col-sm-8 col-xs-8">
-              <h4 class="modal-title" id="employee-modal-4-label">David Smith</h4>
-              <h4>Senior Yacht Consultant</h4>
-            </div>
-          </div>
-        </div>
-        <div class="modal-body">
-          Mr. David Smith spent the last decade involved with the worlds most Iconic yacht programs. He is a first generation officer to fully implement International compliance standards in the super yacht industry. He has advised and participated in the progression of  yachting standards and administration into a professional domain. An MCA Master 3000 Captain with a wide degree of experience from commercial charters to remote Island resource and real estate management .
-          <br></br>
-          ‘This company was set up because we hear a lot of talk but don’t see enough "boots on the ground" experience managing multimillion dollar yacht programs. I think our new generation experience and general passion to make the yacht and crew assets excel sets us apart, that and our ability to handle challenges the rest shy away from.'
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="employee-modal-5" tabindex="-1" role="dialog" aria-labelledby="employee-modal-5-label">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <%= image_tag "ahmed-majumder.jpg", class: "modal-img"%>
-            </div>
-            <div class="col-md-8 col-sm-8 col-xs-8">
-              <h4 class="modal-title" id="employee-modal-5-label">Ahmed Majumder</h4>
-              <h4>Buisness & Computer Technology Specialist</h4>
-            </div>
-          </div>
-        </div>
-        <div class="modal-body">
-          Mr. Ahmed Majumder has spent his career in Product and Technical Product Management. He has an Executive MBA from the University of Maryland, with a focus on Human Capital, International Business and Operations Management He also has a BS in Computer Engineering from Virginia Tech. His career includes diverse experience in engineering, management, and leadership in multibillion-dollar programs. His career roles have included software engineer, test engineer, configuration control specialist, systems engineer, computer engineer, project engineer & manager, program manager and product manager. As deputy program manager of a multibillion-dollar asset, Mr. Majumder has gained the experience and professionalism to support the demands of the yachting industry.
-          <br></br>
-          <!-- Quotes to be added -->
-        </div>
-        <div class="profile-bullets">
-          <ul>
-            <!-- Ships to be added -->
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile Modal -->
-  <div class="modal fade" id="mobile-employee-modal-1" tabindex="-1" role="dialog" aria-labelledby="mobile-employee-modal-1-label">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <%= image_tag "aaron-abramowitz.jpg", class: "modal-img center-block"%>
-            </div>
-          </div>
-          <div class="row">
-            <div class="text-center col-md-12 col-sm-12 col-xs-12">
-              <h4 class="modal-title" id="mobile-employee-modal-1-label">Aaron Abramowitz</h4>
-              <h4>CEO - USCG Master Oceans 1600/3000</h4>
-            </div>
-          </div>
-        </div>
-        <div class="modal-body">
-          Captain Aaron Abramowitz has spent 20+ years in the yachting industry. In his early teens he discovered a love for the water operating family boats and sailing on the New England waterways and lakes. His professional career started on tall ships sailing the East and West Coast. These non-profit programs focused on youth educational programs, leadership development, and the preservation of the North American maritime heritage. Aaron’s inclination towards problem solving quickly led him down the path of Captain and Engineer where he learned how to sail, expect the unexpected, diagnose and solve technical issues, and break down the inner-workings of the ship. Aaron earned his Masters license in his early 20’s and shifted from tall ships to sailing yachts. This is where Aaron’s knowledge of vessel engineering, his love of sailing, and his desire to provide a first-class experience to owners and guests came together.  Aaron continued to accumulate professional experience with superyachts as he captained in the Atlantic, Pacific, Mediterranean, and eventually around the world.  He has planned and managed many multi million dollar yacht refits, annual yard periods, and takes pride in keeping programs on time, on budget and in compliance while minimizing downtime and cost.
-          From tall ships to modern sailing and motor yachts, Aaron has operated and managed the largest and most expensive yachts in the industry. His depth of experience, his operational savvy and commitment to providing first class service makes him uniquely qualified as a Yacht Manager.
-          <br></br>
-          ‘Other agencies react to their client, always trying to please in the moment and are never fully prepared for their needs. I’ve always been weeks and months ahead of my client - allowing the yacht program to quickly pivot to any need.'
-        </div>
-        <div class="profile-bullets">
-          <ul>
-            <li>SY Felicita West 64m</li>
-            <li>MY Mine Games 62m</li>
-            <li>SY Prana 52m</li>
-            <li>SY Perseus 50m</li>
-            <li>MY Just J’s 46m</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="mobile-employee-modal-2" tabindex="-1" role="dialog" aria-labelledby="mobile-employee-modal-2-label">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <%= image_tag "david-abramowitz.jpg", class: "modal-img center-block"%>
-            </div>
-          </div>
-          <div class="row">
-            <div class="text-center col-md-12 col-sm-12 col-xs-12">
-              <h4 class="modal-title" id="mobile-employee-modal-2-label">David Abramowitz</h4>
-              <h4>CFO - Head of Engineering</h4>
-            </div>
-          </div>
-        </div>
-        <div class="modal-body">
-          Mr. David Abramowitz graduated from Virginia Tech in 2000 with a B.S. in Mechanical Engineering. He moved through the Navy and USCG contractor ranks as an estimator, verification and validation specialist, interface specialist, project manager, program manager, chief engineer, principal engineer and program analyst. He has directed multimillion dollar programs responsible for tasking 30+ engineers. During this time, he has successfully started and funded multiple businesses in construction, private equity, real estate rental, engineering services, and software development. It’s David ability to dissect complicated tasks into simple efforts that allows him to succeed where others fail.
-          <br></br>
-          ‘My mentor once told me F=ma anywhere in the world. I’ve never been able to prove him wrong.'
-        </div>
-        <div class="profile-bullets">
-          <ul>
-            <li>Navy Littoral Combat Ship (LCS)</li>
-            <li>USCG National Security Cutter (NSC)</li>
-            <li>USCG Heavy Polar Icebreaker (HPIB)</li>
-            <li>Navy CVN 77</li>
-            <li>Navy DDG 51</li>
-            <li>MY Morgan Star 115ft</li>
-            <li>MY Bandido 125ft</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="mobile-employee-modal-3" tabindex="-1" role="dialog" aria-labelledby="mobile-employee-modal-3-label">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <%= image_tag "matt-redmond.jpg", class: "modal-img center-block"%>
-            </div>
-          </div>
-          <div class="row">
-            <div class="text-center col-md-12 col-sm-12 col-xs-12">
-              <h4 class="modal-title" id="mobile-employee-modal-3-label">Matthew Redmond</h4>
-              <h4>Aviation COO</h4>
-            </div>
-          </div>
-        </div>
-        <div class="modal-body">
-          Mr. Matthew Redmond has 28 Years of Aviation, Aerospace and National Security experience. A Major in the California Air National Guard, Mr. Redmond has aviation experience from Alaska to Afghanistan. His experience includes 1500 helo hours including operations during day and night over water and mountainous terrain under VMC and IMC executing sling loads, fire buckets, hoists, weapons employment, insertions, extractions and VIP movements. He has the experience to schedule, manage and coordinate aviation operations that are professional, effective and safe. His impeccable service earned him the Earl T. Ricks Award for aircrew with best airmanship.
-          <br></br>
-          ‘Ive seen a gap in the yacht industries aviation acumen. It lacks discipline and the understanding of international rules and regulations. We are changing that - and we won’t look back.'
-        </div>
-        <div class="profile-bullets">
-          <ul>
-            <li>Hughes OH-6 Cayuse</li>
-            <li>Th-67 / Bell 206</li>
-            <li>Bell UH-1 Iroquois</li>
-            <li>Sikorsky UH-60 Black Hawk</li>
-            <li>Sikorsky HH-60 Pave Hawk</li>
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="mobile-employee-modal-4" tabindex="-1" role="dialog" aria-labelledby="mobile-employee-modal-4-label">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <%= image_tag "dave-smith.jpg", class: "modal-img center-block"%>
-            </div>
-          </div>
-          <div class="row">
-            <div class="text-center col-md-12 col-sm-12 col-xs-12">
-              <h4 class="modal-title" id="mobile-employee-modal-4-label">David Smith</h4>
-              <h4>Senior Yacht Consultant</h4>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="<%= @session[:screen_size] == 'regular' ? '' : 'text-center' %>">
+                  <h4 class="modal-title" id="employee-modal-4-label">David Smith</h4>
+                  <h4>Senior Yacht Consultant</h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -369,35 +210,33 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="mobile-employee-modal-5" tabindex="-1" role="dialog" aria-labelledby="mobile-employee-modal-5-label">
+  <div class="modal fade" id="employee-modal-5" tabindex="-1" role="dialog" aria-labelledby="employee-modal-5-label">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <%= image_tag "ahmed-majumder.jpg", class: "modal-img center-block"%>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
+              <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="<%= @session[:screen_size] == 'regular' ? '' : 'text-center' %>">
+                  <h4 class="modal-title" id="employee-modal-5-label">Ahmed Majumder</h4>
+                  <h4>Buisness & Computer Technology Specialist</h4>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body">
+              Mr. Ahmed Majumder has spent his career in Product and Technical Product Management. He has an Executive MBA from the University of Maryland, with a focus on Human Capital, International Business and Operations Management He also has a BS in Computer Engineering from Virginia Tech. His career includes diverse experience in engineering, management, and leadership in multibillion-dollar programs. His career roles have included software engineer, test engineer, configuration control specialist, systems engineer, computer engineer, project engineer & manager, program manager and product manager. As deputy program manager of a multibillion-dollar asset, Mr. Majumder has gained the experience and professionalism to support the demands of the yachting industry.
+              <br></br>
+              <!-- Quotes to be added -->
+            </div>
+            <div class="profile-bullets">
+              <ul>
+                <!-- Ships to be added -->
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
-          <div class="row">
-            <div class="text-center col-md-12 col-sm-12 col-xs-12">
-              <h4 class="modal-title" id="mobile-employee-modal-5-label">Ahmed Majumder</h4>
-              <h4>Buisness & Computer Technology Specialist</h4>
-            </div>
-          </div>
-        </div>
-        <div class="modal-body">
-          Mr. Ahmed Majumder has spent his career in Product and Technical Product Management. He has an Executive MBA from the University of Maryland, with a focus on Human Capital, International Business and Operations Management He also has a BS in Computer Engineering from Virginia Tech. His career includes diverse experience in engineering, management, and leadership in multibillion-dollar programs. His career roles have included software engineer, test engineer, configuration control specialist, systems engineer, computer engineer, project engineer & manager, program manager and product manager. As deputy program manager of a multibillion-dollar asset, Mr. Majumder has gained the experience and professionalism to support the demands of the yachting industry.
-          <br></br>
-          <!-- Quotes to be added -->
-        </div>
-        <div class="profile-bullets">
-          <ul>
-            <!-- Ships to be added -->
-          </ul>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -410,48 +249,20 @@
     <div class="section-header-underline"></div>
     <div class="section-header-padding-bottom"></div>
 
-      <!-- regular screen rendering -->
-      <div class="regular-screen">
-        <div id="carousel-profile" class="carousel slide">
-          <div class="row mx-auto text-center section-content-container">
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#employee-modal-1">
-                    <%= image_tag "aaron-abramowitz.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">Aaron Abramowitz</h5>
-                      <p class="container-fluid card-text">CEO - USCG Master Oceans 1600/3000</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#employee-modal-2">
-                    <%= image_tag "david-abramowitz.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">David Abramowitz</h5>
-                      <p class="container-fluid card-text">CFO - Head of Engineering</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#employee-modal-3">
-                    <%= image_tag "matt-redmond.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">Matthew Redmond</h5>
-                      <p class="container-fluid card-text">Aviation COO</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#employee-modal-4">
-                    <%= image_tag "dave-smith.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">David Smith</h5>
-                      <p class="container-fluid card-text">Senior Yacht Consultant</p>
-                    </div>
+    <!-- profile carousel -->
+    <div id="carousel-profile" class="carousel slide">
+      <div class="row mx-auto text-center section-content-container">
+        <div class="carousel-inner" role="listbox">
+          <% if @session[:screen_size] == 'regular' %>
+          <div class="item active">
+          <% end %>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'item active' %>">
+              <div class="<%= @session[:screen_size] == 'regular' ? 'col-md-4 col-sm-4' : 'col-xs-12' %>">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-1">
+                  <%= image_tag "aaron-abramowitz.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Aaron Abramowitz</h5>
+                    <p class="container-fluid card-text">CEO - USCG Master Oceans 1600/3000</p>
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -465,67 +276,52 @@
                 </div>
               </div>
             </div>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'item' %>">
+              <div class="<%= @session[:screen_size] == 'regular' ? 'col-md-4 col-sm-4' : 'col-xs-12' %>">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-2">
+                  <%= image_tag "david-abramowitz.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">David Abramowitz</h5>
+                    <p class="container-fluid card-text">CFO - Head of Engineering</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'item' %>">
+              <div class="<%= @session[:screen_size] == 'regular' ? 'col-md-4 col-sm-4' : 'col-xs-12' %>">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-3">
+                  <%= image_tag "matt-redmond.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Matthew Redmond</h5>
+                    <p class="container-fluid card-text">Aviation COO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% if @session[:screen_size] == 'regular' %>
           </div>
-          <!-- Controls -->
-          <div class="carousel-profile-control-container">
-            <a class="left carousel-control" href="#carousel-profile" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-profile" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- mobile screen rendering -->
-      <div class="mobile-screen">
-        <div id="mobile-carousel-profile" class="carousel slide">
-          <div class="row mx-auto text-center section-content-container">
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#mobile-employee-modal-1">
-                    <%= image_tag "aaron-abramowitz.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">Aaron Abramowitz</h5>
-                      <p class="container-fluid card-text">CEO - USCG Master Oceans 1600/3000</p>
-                    </div>
+          <% end %>
+          <% if @session[:screen_size] == 'regular' %>
+          <div class="item">
+          <% end %>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'item' %>">
+              <div class="<%= @session[:screen_size] == 'regular' ? 'col-md-4 col-sm-4' : 'col-xs-12' %>">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-4">
+                  <%= image_tag "dave-smith.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">David Smith</h5>
+                    <p class="container-fluid card-text">Senior Yacht Consultant</p>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#mobile-employee-modal-2">
-                    <%= image_tag "david-abramowitz.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">David Abramowitz</h5>
-                      <p class="container-fluid card-text">CFO - Head of Engineering</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#mobile-employee-modal-3">
-                    <%= image_tag "matt-redmond.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">Matthew Redmond</h5>
-                      <p class="container-fluid card-text">Aviation COO</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="col-xs-12">
-                  <div class="card center-block" data-toggle="modal" data-target="#mobile-employee-modal-4">
-                    <%= image_tag "dave-smith.jpg", class: "card-img-top"%>
-                    <div class="card-body">
-                      <h5 class="card-title">David Smith</h5>
-                      <p class="container-fluid card-text">Senior Yacht Consultant</p>
-                    </div>
+            </div>
+            <div class="<%= @session[:screen_size] == 'regular' ? '' : 'item' %>">
+              <div class="<%= @session[:screen_size] == 'regular' ? 'col-md-4 col-sm-4' : 'col-xs-12' %>">
+                <div class="card center-block" data-toggle="modal" data-target="#employee-modal-5">
+                  <%= image_tag "ahmed-majumder.jpg", class: "card-img-top"%>
+                  <div class="card-body">
+                    <h5 class="card-title">Ahmed Majumder</h5>
+                    <p class="container-fluid card-text">Buisness & Computer Technology Specialist</p>
                   </div>
                 </div>
               </div>
@@ -541,18 +337,20 @@
                 </div>
               </div>
             </div>
-            <!-- Controls -->
-            <div class="carousel-profile-control-container">
-              <a class="left carousel-control" href="#mobile-carousel-profile" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#mobile-carousel-profile" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+          <% if @session[:screen_size] == 'regular' %>
           </div>
+          <% end %>
+        </div>
+        <!-- Controls -->
+        <div class="carousel-profile-control-container">
+          <a class="left carousel-control" href="#carousel-profile" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-profile" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
