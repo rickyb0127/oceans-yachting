@@ -107,7 +107,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12">
-              <%= image_tag "david-abramowitz.jpg", class: @screen_size == 'regular' ? "modal-img" : "modal-img center-block"%>
+              <%= image_tag "david-abramowitz.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
             </div>
             <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
               <div class="col-md-8 col-sm-8 col-xs-12">
@@ -187,7 +187,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12">
-              <%= image_tag "generic-profile-picture.png", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
+              <%= image_tag "dave-smith.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
             </div>
             <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
               <div class="col-md-8 col-sm-8 col-xs-12">
@@ -216,7 +216,7 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
               <%= image_tag "ahmed-majumder.jpg", class: @session[:screen_size] == 'regular' ? "modal-img" : "modal-img center-block"%>
             </div>
             <div class="<%= @session[:screen_size] == 'regular' ? '' : 'row' %>">
@@ -302,7 +302,7 @@
             <div class="<%= @session[:screen_size] == 'regular' ? '' : 'item' %>">
               <div class="<%= @session[:screen_size] == 'regular' ? 'col-md-4 col-sm-4' : 'col-xs-12' %>">
                 <div class="card center-block" data-toggle="modal" data-target="#employee-modal-4">
-                  <%= image_tag "generic-profile-picture.png", class: "card-img-top"%>
+                  <%= image_tag "dave-smith.jpg", class: "card-img-top"%>
                   <div class="card-body">
                     <h5 class="card-title">David Smith</h5>
                     <p class="container-fluid card-text">Senior Yacht Consultant</p>
